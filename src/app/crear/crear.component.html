@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title>Crear Pedido</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]='itemForm' (ngSubmit)=submit()>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Nombre Cliente</mat-label>
+                <input matInput placeholder="Nombre del Cliente" type="text" formControlName="nombre" >
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Direccion</mat-label>
+                <input matInput placeholder="Direccion" type="text" formControlName="direccion">
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Pedido</mat-label>
+                <input matInput placeholder="Pedido" type="text" formControlName="pedido">
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Fecha de Entrega</mat-label>
+                <input matInput placeholder="Fecha de entrega" type="date" formControlName="fecha">
+            </mat-form-field>
+
+            <button mat-raised-button>Guardar</button>
+        </form>
+    </mat-card-content>
+</mat-card>
